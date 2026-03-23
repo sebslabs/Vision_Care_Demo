@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=DM+Sans:ital,wght@0,400;0,500;0,600;0,700&family=Outfit:wght@300;400;500;600;700&family=Syne:wght@400;500;600;700;800&family=Noto+Sans+Sinhala:wght@400;500;600;700&family=Noto+Sans+Tamil:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 220 20% 99%;
+    --foreground: 220 30% 8%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 220 30% 8%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 30% 8%;
+
+    --primary: 214 80% 21%;
+    --primary-foreground: 210 40% 98%;
+
+    --secondary: 216 60% 32%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 220 14% 96%;
+    --muted-foreground: 220 9% 46%;
+
+    --accent: 213 87% 56%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 220 13% 91%;
+    --input: 220 13% 91%;
+    --ring: 214 80% 21%;
+
+    --radius: 0.75rem;
+
+    /* Brand tokens */
+    --navy: 214 80% 21%;
+    --medium-blue: 216 68% 32%;
+    --sky-blue: 213 87% 56%;
+    --gold: 42 52% 54%;
+    --cream: 220 20% 97%;
+    --text-dark: 220 30% 8%;
+    --text-muted: 220 9% 46%;
+    --border-light: 220 13% 91%;
+
+    /* Shadows */
+    --shadow-card: 0 2px 20px rgba(0, 0, 0, 0.06);
+    --shadow-card-hover: 0 5px 30px rgba(0, 0, 0, 0.1);
+    --shadow-soft: 0 1px 8px rgba(0, 0, 0, 0.04);
+
+    /* Sidebar */
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'DM Sans', sans-serif;
+  }
+}
+
+@layer components {
+  .font-display {
+    font-family: 'Cormorant Garamond', serif;
+  }
+
+  .font-ui {
+    font-family: 'Outfit', sans-serif;
+  }
+
+  .font-body {
+    font-family: 'DM Sans', sans-serif;
+  }
+
+  .font-stats {
+    font-family: 'Syne', sans-serif;
+  }
+
+  .font-sinhala {
+    font-family: 'Noto Sans Sinhala', sans-serif;
+  }
+
+  .font-tamil {
+    font-family: 'Noto Sans Tamil', sans-serif;
+  }
+}
+
+/* Brand strip animation */
+@keyframes scroll-brands {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-scroll-brands {
+  animation: scroll-brands 30s linear infinite;
+}
+
+.animate-scroll-brands:hover {
+  animation-play-state: paused;
+}
+
+/* Fade in animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 0.6s ease-out forwards;
+  opacity: 0;
+}
