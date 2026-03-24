@@ -22,7 +22,7 @@ export default function DoctorsSection() {
                     {doctors.map((doc, i) => (
                         <div
                             key={doc.id}
-                            className={`group bg-white rounded-2xl overflow-hidden border border-border-light hover:shadow-[0_15px_35px_-5px_rgba(0,0,0,0.1)] transition-all duration-500 hover:-translate-y-2 hover:scale-[1.02] flex flex-col h-full ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}
+                            className={`group bg-white rounded-2xl overflow-hidden border border-border-light shadow-soft hover:shadow-card-hover transition-all duration-500 hover:-translate-y-2 flex flex-col h-full ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}
                             style={{ transitionDelay: isVisible ? `${i * 100}ms` : '0ms' }}
                         >
                             <div className="aspect-[4/3] overflow-hidden bg-muted">
@@ -41,7 +41,7 @@ export default function DoctorsSection() {
                 </div>
 
                 <div className={`text-center mt-12 transition-all duration-700 delay-500 ${isVisible ? 'opacity-100' : 'opacity-0'}`}>
-                    <Link to="/specialists" className="px-8 py-4 border-2 border-navy text-navy font-ui text-base font-bold rounded-full hover:bg-navy hover:text-white transition-colors duration-300 inline-block shadow-sm">
+                    <Link to="/specialists" className="inline-flex items-center justify-center h-14 px-8 bg-white border-2 border-border-light text-navy font-ui text-base font-bold rounded-xl hover:border-navy hover:bg-navy/5 transition-all text-center hover:-translate-y-1 duration-300 shadow-soft hover:shadow-card">
                         View All Doctors
                     </Link>
                 </div>

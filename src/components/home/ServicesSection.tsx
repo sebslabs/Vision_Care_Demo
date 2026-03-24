@@ -24,7 +24,7 @@ export default function ServicesSection() {
               <Link
                 to={`/services/${service.id}`}
                 key={service.id}
-                className={`group bg-white rounded-xl p-8 border border-slate-200 hover:border-blue-100 transition-all duration-300 hover:-translate-y-1 hover:scale-[1.01] hover:shadow-xl flex flex-col h-full ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}
+                className={`group bg-white rounded-2xl p-8 border border-border-light hover:border-sky-blue/30 transition-all duration-500 hover:-translate-y-2 hover:shadow-card-hover flex flex-col h-full shadow-soft ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}
                 style={{ transitionDelay: isVisible ? `${i * 100}ms` : '0ms' }}
               >
                 <div className="w-14 h-14 rounded-xl bg-muted/60 flex items-center justify-center mb-6 group-hover:bg-sky-blue transition-colors duration-500">
@@ -38,7 +38,7 @@ export default function ServicesSection() {
           })}
         </div>
         <div className={`text-center mt-16 transition-all duration-700 delay-500 ${isVisible ? 'opacity-100' : 'opacity-0'}`}>
-          <Link to="/services" className="inline-flex items-center justify-center h-14 px-8 bg-transparent border-2 border-slate-200 text-slate-900 font-ui text-base font-semibold rounded-lg hover:border-slate-300 hover:bg-slate-50 transition-all text-center hover:-translate-y-0.5 duration-300 shadow-sm">
+          <Link to="/services" className="inline-flex items-center justify-center h-14 px-8 bg-white border-2 border-border-light text-navy font-ui text-base font-bold rounded-xl hover:border-navy hover:bg-navy/5 transition-all text-center hover:-translate-y-1 duration-300 shadow-soft hover:shadow-card">
             {t('services.viewall')}
           </Link>
         </div>

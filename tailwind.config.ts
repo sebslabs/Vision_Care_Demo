@@ -14,10 +14,10 @@ export default {
     },
     extend: {
       fontFamily: {
-        display: ['"Cormorant Garamond"', 'serif'],
-        ui: ['"Outfit"', 'sans-serif'],
-        body: ['"DM Sans"', 'sans-serif'],
-        stats: ['"Syne"', 'sans-serif'],
+        display: ['"Poppins"', 'sans-serif'],
+        ui: ['"Inter"', 'sans-serif'],
+        body: ['"Inter"', 'sans-serif'],
+        stats: ['"Inter"', 'sans-serif'],
         sinhala: ['"Noto Sans Sinhala"', 'sans-serif'],
         tamil: ['"Noto Sans Tamil"', 'sans-serif'],
       },

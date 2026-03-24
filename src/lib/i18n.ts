@@ -21,8 +21,8 @@ export const translations: Record<Language, Record<string, string>> = {
 
     // Hero
     'hero.label': "Sri Lanka's Premier Optical Care",
-    'hero.heading': 'Experience the Future of Eye Care, Today',
-    'hero.sub': 'Sri Lanka’s most trusted specialists combine state-of-the-art technology with world-class eyewear brands to provide unmatched precision and style for your vision.',
+    'hero.heading': 'Clear Vision Starts Here',
+    'hero.sub': 'Comprehensive eye testing, premium lenses, designer frames, and specialist care—all under one roof. Sri Lanka’s most trusted clinic for your vision health.',
     'hero.cta1': 'Book an Appointment',
     'hero.cta2': 'Explore Our Services',
     'hero.stat1': 'ISO Certified',

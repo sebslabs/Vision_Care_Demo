@@ -32,20 +32,20 @@ export default function HeroSection() {
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 mb-10 animate-fade-in-up" style={{ animationDelay: '300ms' }}>
-              <Link to="/book" className="group inline-flex items-center justify-center h-14 px-8 bg-blue-900 text-white font-ui text-base font-bold rounded-lg hover:bg-blue-800 transition-all text-center shadow-lg hover:shadow-xl hover:-translate-y-0.5 duration-300">
+              <Link to="/book" className="group inline-flex items-center justify-center h-14 px-8 bg-navy text-white font-ui text-base font-bold rounded-xl hover:bg-medium-blue transition-all text-center shadow-card hover:shadow-card-hover hover:-translate-y-1 duration-300">
                 {t('hero.cta1')}
                 <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
               </Link>
-              <Link to="/services" className="inline-flex items-center justify-center h-14 px-8 bg-transparent border-2 border-slate-200 text-slate-900 font-ui text-base font-semibold rounded-lg hover:border-slate-300 hover:bg-slate-50 transition-all text-center hover:-translate-y-0.5 duration-300">
+              <Link to="/services" className="inline-flex items-center justify-center h-14 px-8 bg-white/50 backdrop-blur-md border-2 border-border-light text-navy font-ui text-base font-bold rounded-xl hover:border-sky-blue hover:bg-sky-blue/5 transition-all text-center hover:-translate-y-1 duration-300 shadow-soft hover:shadow-card">
                 {t('hero.cta2')}
               </Link>
             </div>
 
-            <div className="flex flex-wrap gap-4 sm:gap-6 animate-fade-in-up border-t border-slate-200 pt-6" style={{ animationDelay: '400ms' }}>
+            <div className="flex flex-wrap gap-3 sm:gap-4 animate-fade-in-up border-t border-border-light pt-8" style={{ animationDelay: '400ms' }}>
               {['hero.stat1', 'hero.stat2', 'hero.stat3', 'hero.stat4'].map((key) => (
-                <div key={key} className="flex items-center gap-2 bg-slate-50 px-3 py-1.5 rounded-full border border-slate-100">
-                  <span className="w-2 h-2 rounded-full bg-blue-900" />
-                  <span className="font-ui text-xs font-semibold text-slate-700 tracking-wide">{t(key)}</span>
+                <div key={key} className="flex items-center gap-2.5 bg-cream/80 backdrop-blur-sm px-4 py-2 rounded-full border border-border-light shadow-soft transition-all hover:bg-white hover:shadow-card hover:-translate-y-0.5">
+                  <span className="w-2 h-2 rounded-full bg-sky-blue" />
+                  <span className="font-ui text-xs font-bold text-navy tracking-widest uppercase">{t(key)}</span>
                 </div>
               ))}
             </div>
