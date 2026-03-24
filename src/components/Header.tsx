@@ -26,6 +26,7 @@ const navLinks = [
   { key: 'nav.hearing', href: '/hearing' },
   { key: 'nav.academy', href: '/academy' },
   { key: 'nav.branches', href: '/branches' },
+  { key: 'nav.specialists', href: '/specialists' },
   { key: 'nav.blog', href: '/blog' },
   { key: 'nav.careers', href: '/careers' },
   { key: 'nav.contact', href: '/contact' },
@@ -174,13 +175,13 @@ export default function Header() {
 
       {/* Mobile menu overlay */}
       {menuOpen && (
-        <div className="fixed inset-0 z-30 bg-card pt-10 px-6 pb-28 overflow-y-auto lg:hidden flex flex-col">
-          <div className="flex items-center justify-between mb-8">
+        <div className="fixed inset-0 z-[60] bg-cream/95 backdrop-blur-xl pt-6 px-4 pb-28 overflow-y-auto lg:hidden flex flex-col animate-in fade-in slide-in-from-bottom-8 duration-300">
+          <div className="flex items-center justify-between mb-8 border-b border-border-light/50 pb-4">
             <Link to="/" onClick={() => setMenuOpen(false)}>
               <img src={logo} alt="Vision Care Logo" className="h-10 w-auto" />
             </Link>
-            <button onClick={() => setMenuOpen(false)} className="p-2 text-navy">
-              <X className="w-6 h-6" />
+            <button onClick={() => setMenuOpen(false)} className="p-2 text-navy hover:text-sky-blue hover:bg-navy/5 rounded-full transition-colors">
+              <X className="w-7 h-7" strokeWidth={1.5} />
             </button>
           </div>
           <nav className="flex flex-col gap-1">

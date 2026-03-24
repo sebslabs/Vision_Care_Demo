@@ -41,7 +41,7 @@ export default function DoctorsSection() {
                 </div>
 
                 <div className={`text-center mt-12 transition-all duration-700 delay-500 ${isVisible ? 'opacity-100' : 'opacity-0'}`}>
-                    <Link to="/about" className="px-8 py-4 border-2 border-navy text-navy font-ui text-base font-bold rounded-full hover:bg-navy hover:text-white transition-colors duration-300 inline-block shadow-sm">
+                    <Link to="/specialists" className="px-8 py-4 border-2 border-navy text-navy font-ui text-base font-bold rounded-full hover:bg-navy hover:text-white transition-colors duration-300 inline-block shadow-sm">
                         View All Doctors
                     </Link>
                 </div>

@@ -180,3 +180,12 @@ export const promotions = [
     image: 'https://images.unsplash.com/photo-1574258495973-f010dfbb5371?auto=format&fit=crop&q=80&w=800'
   }
 ];
+
+export const specialists = [
+  { id: 1, name: 'Dr. Rohan Fernando', title: 'Senior Consultant Ophthalmologist', specialty: 'General Ophthalmology', branch: 'Colombo 03', qualifications: 'MBBS, MS (Ophth), FRCS', image: 'https://images.unsplash.com/photo-1622253692010-333f2da6031d?w=400&q=80', availableDays: ['Monday', 'Wednesday', 'Friday'] },
+  { id: 2, name: 'Dr. Sarah Perera', title: 'Consultant Paediatric Ophthalmologist', specialty: 'Paediatric Eye Care', branch: 'Colombo 07', qualifications: 'MBBS, MD', image: 'https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=400&q=80', availableDays: ['Tuesday', 'Thursday', 'Saturday'] },
+  { id: 3, name: 'Dr. Kamal Silva', title: 'Consultant Audiologist', specialty: 'Hearing Care', branch: 'Nugegoda', qualifications: 'BSc (Hons) Audiology, MSc', image: 'https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=400&q=80', availableDays: ['Monday', 'Thursday'] },
+  { id: 4, name: 'Dr. Natasha Weerasinghe', title: 'Specialist Optometrist', specialty: 'Contact Lenses & Ortho-K', branch: 'Kandy', qualifications: 'BSc Optometry, PhD', image: 'https://images.unsplash.com/photo-1594824436951-7f1269556d44?w=400&q=80', availableDays: ['Wednesday', 'Friday', 'Saturday'] },
+  { id: 5, name: 'Dr. Arjuna Mendis', title: 'Consultant Ophthalmologist', specialty: 'Glaucoma Assessment', branch: 'Galle', qualifications: 'MBBS, MS, FRCS', image: 'https://images.unsplash.com/photo-1537368910025-700350fe46c7?w=400&q=80', availableDays: ['Tuesday', 'Thursday'] },
+  { id: 6, name: 'Dr. Shamila De Silva', title: 'Low Vision Specialist', specialty: 'Low Vision Care', branch: 'Colombo 03', qualifications: 'BSc (Hons) Optometry', image: 'https://images.unsplash.com/photo-1651008376811-b90baee60c1f?w=400&q=80', availableDays: ['Monday', 'Tuesday', 'Wednesday'] },
+];

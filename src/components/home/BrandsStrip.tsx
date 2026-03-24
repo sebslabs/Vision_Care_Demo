@@ -36,7 +36,7 @@ export default function BrandsStrip() {
 
         <div className="flex animate-scroll-brands hover:[animation-play-state:paused] whitespace-nowrap">
           {[...brands, ...brands, ...brands].map((brand, i) => (
-            <div key={i} className="flex-shrink-0 px-12 md:px-24 py-6 flex items-center justify-center group cursor-pointer">
+            <div key={i} className="flex-shrink-0 px-8 md:px-12 py-6 flex items-center justify-center group cursor-pointer">
               <img
                 src={brand.logo}
                 alt={`${brand.name} logo`}

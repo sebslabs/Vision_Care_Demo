@@ -29,6 +29,7 @@ const companyLinks = [
   { label: 'Branches', href: '/branches' },
   { label: 'Careers', href: '/careers' },
   { label: 'Blog', href: '/blog' },
+  { label: 'Specialists', href: '/specialists' },
 ];
 
 export default function Footer() {
@@ -45,7 +46,7 @@ export default function Footer() {
                 <img 
                   src={logo} 
                   alt="Vision Care Logo" 
-                  className="h-12 md:h-14 w-auto object-contain bg-white/95 px-3 py-1.5 rounded-lg shadow-sm" 
+                  className="h-16 md:h-20 w-auto object-contain brightness-0 invert opacity-90 hover:opacity-100 transition-opacity" 
                 />
               </Link>
             </div>
