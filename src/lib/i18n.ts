@@ -5,6 +5,7 @@ export const translations: Record<Language, Record<string, string>> = {
     // Navigation
     'nav.about': 'About Us',
     'nav.eyecare': 'Eye Care',
+    'nav.services': 'Services',
     'nav.eyewear': 'Eyewear',
     'nav.promotions': 'Promotions',
     'nav.hearing': 'Hearing',
@@ -19,8 +20,8 @@ export const translations: Record<Language, Record<string, string>> = {
 
     // Hero
     'hero.label': "Sri Lanka's Premier Optical Care",
-    'hero.heading': 'See the World Clearly with World-Class Eye Care',
-    'hero.sub': 'Experience personalized treatments from leading eye specialists using state-of-the-art technology. Your vision is our highest priority.',
+    'hero.heading': 'Experience the Future of Eye Care, Today',
+    'hero.sub': 'Sri Lanka’s most trusted specialists combine state-of-the-art technology with world-class eyewear brands to provide unmatched precision and style for your vision.',
     'hero.cta1': 'Book an Appointment',
     'hero.cta2': 'Explore Our Services',
     'hero.stat1': 'ISO Certified',
@@ -207,6 +208,7 @@ export const translations: Record<Language, Record<string, string>> = {
     // Navigation
     'nav.about': 'අප ගැන',
     'nav.eyecare': 'ඇස් සත්කාර',
+    'nav.services': 'සේවා',
     'nav.eyewear': 'කණ්ණාඩි',
     'nav.promotions': 'ප්‍රවර්ධන',
     'nav.hearing': 'ශ්‍රවණ',
@@ -409,6 +411,7 @@ export const translations: Record<Language, Record<string, string>> = {
     // Navigation
     'nav.about': 'எங்களைப் பற்றி',
     'nav.eyecare': 'கண் பராமரிப்பு',
+    'nav.services': 'சேவைகள்',
     'nav.eyewear': 'கண்ணாடிகள்',
     'nav.promotions': 'விளம்பரங்கள்',
     'nav.hearing': 'காது பராமரிப்பு',

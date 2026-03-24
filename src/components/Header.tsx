@@ -20,7 +20,7 @@ const iconMap: Record<string, React.ElementType> = { Eye, Glasses, CircleDot, Su
 
 const navLinks = [
   { key: 'nav.about', href: '/about' },
-  { key: 'nav.eyecare', href: '/services', isDropdown: true },
+  { key: 'nav.services', href: '/services', isDropdown: true },
   { key: 'nav.eyewear', href: '/eyewear' },
   { key: 'nav.promotions', href: '/promotions' },
   { key: 'nav.hearing', href: '/hearing' },
@@ -162,7 +162,7 @@ export default function Header() {
           </nav>
 
           <div className="flex items-center gap-3">
-            <Link to="/book" className="hidden md:inline-flex items-center px-5 py-2.5 bg-navy text-primary-foreground font-ui text-sm font-medium rounded-md hover:bg-medium-blue transition-colors">
+            <Link to="/book" className="hidden lg:inline-flex items-center px-6 py-2.5 bg-navy text-primary-foreground font-ui text-sm font-bold rounded-full hover:bg-medium-blue transition-all hover:scale-105 hover:shadow-lg">
               {t('nav.book')}
             </Link>
             <button onClick={() => setMenuOpen(!menuOpen)} className="lg:hidden p-2 text-navy" aria-label="Menu">
@@ -174,7 +174,7 @@ export default function Header() {
 
       {/* Mobile menu overlay */}
       {menuOpen && (
-        <div className="fixed inset-0 z-30 bg-card pt-10 px-6 overflow-y-auto lg:hidden flex flex-col">
+        <div className="fixed inset-0 z-30 bg-card pt-10 px-6 pb-28 overflow-y-auto lg:hidden flex flex-col">
           <div className="flex items-center justify-between mb-8">
             <Link to="/" onClick={() => setMenuOpen(false)}>
               <img src={logo} alt="Vision Care Logo" className="h-10 w-auto" />
@@ -231,9 +231,6 @@ export default function Header() {
             <a href="https://shop.visioncare.lk" target="_blank" rel="noopener noreferrer" className="font-display text-2xl font-semibold text-navy py-3 border-b border-border-light flex items-center gap-2">
               {t('nav.shop')} <ExternalLink className="w-5 h-5" />
             </a>
-            <Link to="/book" className="mt-6 w-full text-center px-6 py-4 bg-navy text-primary-foreground font-ui text-lg font-medium rounded-lg">
-              {t('nav.book')}
-            </Link>
           </nav>
           <div className="mt-8 flex flex-col gap-3 text-sm text-text-muted font-ui pb-10">
             {subBrands.map((sb) => (
@@ -248,6 +245,13 @@ export default function Header() {
           </div>
         </div>
       )}
+
+      {/* Mobile Sticky Booking CTA */}
+      <div className="lg:hidden fixed bottom-0 left-0 right-0 p-4 bg-card/90 backdrop-blur-md border-t border-border-light z-40 shadow-[0_-4px_20px_rgba(0,0,0,0.05)]">
+        <Link to="/book" className="flex w-full items-center justify-center px-6 py-3.5 bg-navy text-primary-foreground font-ui text-base font-bold rounded-xl shadow-lg hover:bg-medium-blue transition-colors">
+          {t('nav.book')}
+        </Link>
+      </div>
     </>
   );
 }

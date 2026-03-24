@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
-import { Eye, Facebook, Instagram, Linkedin, Youtube, ExternalLink } from 'lucide-react';
+import { Facebook, Instagram, Linkedin, Youtube, ExternalLink } from 'lucide-react';
 import { useLanguage } from '@/hooks/useLanguage';
+import logo from '@/assets/logo.png';
 
 const serviceLinks = [
   { label: 'Eye Testing', href: '/services/eye-testing' },
@@ -39,9 +40,14 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 lg:gap-8">
           {/* Brand */}
           <div className="lg:col-span-1">
-            <div className="flex items-center gap-2 mb-4">
-              <Eye className="w-6 h-6" strokeWidth={1.5} />
-              <span className="font-display text-xl font-bold">Vision Care</span>
+            <div className="mb-6">
+              <Link to="/">
+                <img 
+                  src={logo} 
+                  alt="Vision Care Logo" 
+                  className="h-12 md:h-14 w-auto object-contain bg-white/95 px-3 py-1.5 rounded-lg shadow-sm" 
+                />
+              </Link>
             </div>
             <p className="text-primary-foreground/70 text-sm font-body mb-5">{t('footer.tagline')}</p>
             <div className="flex items-center gap-3 mb-6">

@@ -5,9 +5,9 @@ import { Slider } from '@/components/ui/slider';
 import CTABanner from '@/components/CTABanner';
 import StructuredData from '@/components/StructuredData';
 
-const brands = ['All', 'Ray-Ban', 'Prada', 'Carrera', 'Coach', 'Vogue', 'Armani', 'Porsche Design', 'Oakley'];
-const types = ['All', 'Spectacle Frames', 'Sunglasses', 'Reading Glasses', 'Kids Frames', 'Sports Frames'];
-const genders = ['All', 'Men', 'Women', 'Unisex', 'Kids'];
+const brands = ['All', ...Array.from(new Set(products.map((p) => p.brand)))];
+const types = ['All', ...Array.from(new Set(products.map((p) => p.type)))];
+const genders = ['All', ...Array.from(new Set(products.map((p) => p.gender)))];
 
 const MIN_PRICE = 0;
 const MAX_PRICE = 100000;

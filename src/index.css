@@ -116,7 +116,13 @@
 }
 
 .animate-scroll-brands {
-  animation: scroll-brands 30s linear infinite;
+  animation: scroll-brands 15s linear infinite;
+}
+
+@media (min-width: 768px) {
+  .animate-scroll-brands {
+    animation-duration: 30s;
+  }
 }
 
 .animate-scroll-brands:hover {

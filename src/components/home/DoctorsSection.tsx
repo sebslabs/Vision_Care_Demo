@@ -22,16 +22,16 @@ export default function DoctorsSection() {
                     {doctors.map((doc, i) => (
                         <div
                             key={doc.id}
-                            className={`group bg-white rounded-2xl overflow-hidden border border-border-light hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}
+                            className={`group bg-white rounded-2xl overflow-hidden border border-border-light hover:shadow-[0_15px_35px_-5px_rgba(0,0,0,0.1)] transition-all duration-500 hover:-translate-y-2 hover:scale-[1.02] flex flex-col h-full ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}
                             style={{ transitionDelay: isVisible ? `${i * 100}ms` : '0ms' }}
                         >
                             <div className="aspect-[4/3] overflow-hidden bg-muted">
                                 <img src={doc.img} alt={doc.name} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
                             </div>
-                            <div className="p-8">
+                            <div className="flex flex-col flex-grow p-8">
                                 <h3 className="font-ui text-xl font-bold text-navy mb-1">{doc.name}</h3>
-                                <p className="font-ui text-sm font-semibold text-sky-blue mb-4">{doc.spec}</p>
-                                <div className="flex items-center justify-between mt-6 pt-6 border-t border-border-light">
+                                <p className="font-ui text-sm font-semibold text-sky-blue mb-4 flex-grow">{doc.spec}</p>
+                                <div className="mt-auto flex items-center justify-between pt-6 border-t border-border-light">
                                     <span className="font-body text-sm text-text-muted bg-muted/50 px-3 py-1 rounded-full">{doc.exp}</span>
                                     <Link to="/book" className="font-ui text-sm text-navy font-bold hover:text-sky-blue transition-colors">Book Consult →</Link>
                                 </div>

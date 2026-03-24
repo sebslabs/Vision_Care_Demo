@@ -127,12 +127,12 @@ export const products = [
 ];
 
 export const testimonials = [
-  { name: 'Amara Perera', city: 'Colombo', service: 'Eye Testing', rating: 5, quote: 'The thoroughness of my eye examination at Vision Care was remarkable. The optometrist took time to explain everything clearly.', avatar: 'AP' },
-  { name: 'Dinesh Kumar', city: 'Kandy', service: 'Spectacles', rating: 5, quote: 'Found the perfect pair of Prada frames. The staff were incredibly knowledgeable about face shapes and lens options.', avatar: 'DK' },
-  { name: 'Fatima Hassan', city: 'Galle', service: 'Contact Lenses', rating: 5, quote: 'Switching to daily contact lenses changed my life. The fitting process was comfortable and professional.', avatar: 'FH' },
-  { name: 'Ruwan Silva', city: 'Negombo', service: 'Hearing Care', rating: 5, quote: 'The hearing assessment at Vision Care was the first step to reconnecting with the world around me.', avatar: 'RS' },
-  { name: 'Priya Navaratnam', city: 'Jaffna', service: 'Paediatric Eye Care', rating: 5, quote: 'My daughter was nervous about her first eye test, but the team made it feel like a fun adventure.', avatar: 'PN' },
-  { name: 'Sanjay Mendis', city: 'Matara', service: 'Ortho-K', rating: 5, quote: 'Ortho-K lenses gave my son freedom from glasses during school and sports. Truly life-changing.', avatar: 'SM' },
+  { name: 'Amara Perera', city: 'Colombo', service: 'Eye Testing', rating: 5, quote: 'The thoroughness of my eye examination at Vision Care was remarkable. The optometrist took time to explain everything clearly.', avatar: 'AP', img: 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=150' },
+  { name: 'Dinesh Kumar', city: 'Kandy', service: 'Spectacles', rating: 5, quote: 'Found the perfect pair of Prada frames. The staff were incredibly knowledgeable about face shapes and lens options.', avatar: 'DK', img: 'https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=150' },
+  { name: 'Fatima Hassan', city: 'Galle', service: 'Contact Lenses', rating: 5, quote: 'Switching to daily contact lenses changed my life. The fitting process was comfortable and professional.', avatar: 'FH', img: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=150' },
+  { name: 'Ruwan Silva', city: 'Negombo', service: 'Hearing Care', rating: 5, quote: 'The hearing assessment at Vision Care was the first step to reconnecting with the world around me.', avatar: 'RS', img: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150' },
+  { name: 'Priya Navaratnam', city: 'Jaffna', service: 'Paediatric Eye Care', rating: 5, quote: 'My daughter was nervous about her first eye test, but the team made it feel like a fun adventure.', avatar: 'PN', img: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=150' },
+  { name: 'Sanjay Mendis', city: 'Matara', service: 'Ortho-K', rating: 5, quote: 'Ortho-K lenses gave my son freedom from glasses during school and sports. Truly life-changing.', avatar: 'SM', img: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=150' },
 ];
 
 export const blogPosts = [

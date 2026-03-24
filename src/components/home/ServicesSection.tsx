@@ -11,7 +11,7 @@ export default function ServicesSection() {
   const { ref, isVisible } = useScrollAnimation();
 
   return (
-    <section ref={ref} className="py-24 lg:py-36 bg-cream">
+    <section ref={ref} className="py-20 lg:py-24 bg-slate-50">
       <div className="container mx-auto px-4">
         <div className={`text-center mb-16 transition-all duration-700 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-5'}`}>
           <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-bold text-text-dark mb-4">{t('services.heading')}</h2>
@@ -24,21 +24,21 @@ export default function ServicesSection() {
               <Link
                 to={`/services/${service.id}`}
                 key={service.id}
-                className={`group bg-white rounded-2xl p-8 border border-border-light hover:border-transparent transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}
+                className={`group bg-white rounded-xl p-8 border border-slate-200 hover:border-blue-100 transition-all duration-300 hover:-translate-y-1 hover:scale-[1.01] hover:shadow-xl flex flex-col h-full ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}
                 style={{ transitionDelay: isVisible ? `${i * 100}ms` : '0ms' }}
               >
                 <div className="w-14 h-14 rounded-xl bg-muted/60 flex items-center justify-center mb-6 group-hover:bg-sky-blue transition-colors duration-500">
                   <Icon className="w-7 h-7 text-navy group-hover:text-white transition-colors duration-500" strokeWidth={1.5} />
                 </div>
                 <h3 className="font-ui text-xl font-bold text-navy mb-3">{service.name}</h3>
-                <p className="font-body text-base text-text-muted mb-6 leading-relaxed line-clamp-3">{service.description}</p>
-                <span className="font-ui text-sm text-sky-blue font-bold tracking-wide group-hover:text-navy transition-colors flex items-center gap-1 group-hover:gap-2">Learn More <span className="text-lg">→</span></span>
+                <p className="font-body text-base text-text-muted mb-6 leading-relaxed flex-grow">{service.description}</p>
+                <span className="mt-auto pt-2 font-ui text-sm font-semibold text-blue-600 group-hover:text-blue-800 transition-all flex items-center gap-1 group-hover:translate-x-1 duration-300">Learn More <span className="text-lg">→</span></span>
               </Link>
             );
           })}
         </div>
         <div className={`text-center mt-16 transition-all duration-700 delay-500 ${isVisible ? 'opacity-100' : 'opacity-0'}`}>
-          <Link to="/services" className="px-8 py-4 border-2 border-navy text-navy font-ui text-base font-bold rounded-full hover:bg-navy hover:text-white transition-colors duration-300 shadow-sm hover:shadow-md inline-block">
+          <Link to="/services" className="inline-flex items-center justify-center h-14 px-8 bg-transparent border-2 border-slate-200 text-slate-900 font-ui text-base font-semibold rounded-lg hover:border-slate-300 hover:bg-slate-50 transition-all text-center hover:-translate-y-0.5 duration-300 shadow-sm">
             {t('services.viewall')}
           </Link>
         </div>

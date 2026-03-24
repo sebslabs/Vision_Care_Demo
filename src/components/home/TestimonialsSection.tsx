@@ -47,9 +47,13 @@ export default function TestimonialsSection() {
               <p className="font-body text-[15px] text-text-dark mb-8 leading-relaxed line-clamp-4">"{t.quote}"</p>
 
               <div className="flex items-center gap-4 mt-auto border-t border-border-light pt-6">
-                <div className="w-12 h-12 rounded-full bg-gradient-to-br from-navy to-sky-blue flex items-center justify-center shrink-0 shadow-inner">
-                  <span className="font-ui text-sm font-bold text-white">{t.avatar}</span>
-                </div>
+                {t.img ? (
+                  <img src={t.img} alt={t.name} className="w-12 h-12 rounded-full object-cover shrink-0 shadow-sm" />
+                ) : (
+                  <div className="w-12 h-12 rounded-full bg-gradient-to-br from-navy to-sky-blue flex items-center justify-center shrink-0 shadow-inner">
+                    <span className="font-ui text-sm font-bold text-white">{t.avatar}</span>
+                  </div>
+                )}
                 <div>
                   <p className="font-ui text-base font-bold text-navy">{t.name}</p>
                   <div className="flex items-center gap-2 mt-0.5">

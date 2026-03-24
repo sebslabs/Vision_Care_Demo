@@ -23,8 +23,8 @@ export default function BrandsStrip() {
   const { ref, isVisible } = useScrollAnimation();
 
   return (
-    <section ref={ref} className={`py-20 lg:py-28 bg-white overflow-hidden transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
-      <div className="container mx-auto px-4 mb-14 text-center">
+    <section ref={ref} className={`py-12 md:py-20 lg:py-28 bg-white overflow-hidden transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+      <div className="container mx-auto px-4 mb-8 md:mb-14 text-center">
         <p className="font-ui text-sm font-bold text-sky-blue tracking-[0.2em] uppercase mb-4">Official Retailer</p>
         <h2 className="font-display text-4xl lg:text-5xl font-bold text-navy">World-Class Eyewear Brands</h2>
       </div>
@@ -36,11 +36,11 @@ export default function BrandsStrip() {
 
         <div className="flex animate-scroll-brands hover:[animation-play-state:paused] whitespace-nowrap">
           {[...brands, ...brands, ...brands].map((brand, i) => (
-            <div key={i} className="flex-shrink-0 px-10 md:px-16 py-6 flex items-center justify-center group cursor-pointer">
+            <div key={i} className="flex-shrink-0 px-12 md:px-24 py-6 flex items-center justify-center group cursor-pointer">
               <img
                 src={brand.logo}
                 alt={`${brand.name} logo`}
-                className="h-20 md:h-28 lg:h-36 w-auto object-contain grayscale opacity-40 group-hover:grayscale-0 group-hover:opacity-100 group-hover:scale-110 transition-all duration-500 ease-out"
+                className="h-28 md:h-36 lg:h-48 w-auto object-contain grayscale opacity-40 group-hover:grayscale-0 group-hover:opacity-100 group-hover:scale-110 transition-all duration-500 ease-out"
               />
             </div>
           ))}

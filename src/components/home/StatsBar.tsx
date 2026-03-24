@@ -56,7 +56,7 @@ export default function StatsBar() {
       <div className={`container mx-auto px-4 grid grid-cols-2 md:grid-cols-4 gap-8 lg:gap-12 relative z-10 transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
         {stats.map((s, i) => (
           <div key={s.key} className="text-center" style={{ transitionDelay: isVisible ? `${i * 150}ms` : '0ms' }}>
-            <div className="font-stats text-5xl md:text-6xl lg:text-7xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-white to-sky-blue/80 mb-3">
+            <div className="font-stats text-5xl md:text-6xl lg:text-7xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-white to-sky-blue/80 mb-3 drop-shadow-[0_0_15px_rgba(255,255,255,0.3)]">
               <StatItem stat={s} isVisible={isVisible} />
             </div>
             <div className="font-ui text-sm lg:text-base font-semibold text-white/80 tracking-widest uppercase">{t(s.key)}</div>

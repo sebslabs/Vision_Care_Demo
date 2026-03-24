@@ -17,12 +17,14 @@ import HearingPage from "./pages/HearingPage";
 import AcademyPage from "./pages/AcademyPage";
 import BranchesPage from "./pages/BranchesPage";
 import BlogPage from "./pages/BlogPage";
+import BlogDetailPage from "./pages/BlogDetailPage";
 import CareersPage from "./pages/CareersPage";
 import ContactPage from "./pages/ContactPage";
 import BookingPage from "./pages/BookingPage";
 import PromotionsPage from "./pages/PromotionsPage";
 import NotFound from "./pages/NotFound";
 import StructuredData from "@/components/StructuredData";
+import ScrollToTop from "@/components/ScrollToTop";
 
 const queryClient = new QueryClient();
 
@@ -70,6 +72,7 @@ const App = () => (
       <LightboxProvider>
         <Sonner />
         <BrowserRouter>
+          <ScrollToTop />
           <StructuredData data={mainBusinessData} />
           <Header />
           <main>
@@ -86,7 +89,7 @@ const App = () => (
               <Route path="/academy" element={<AcademyPage />} />
               <Route path="/branches" element={<BranchesPage />} />
               <Route path="/blog" element={<BlogPage />} />
-              <Route path="/blog/:id" element={<BlogPage />} />
+              <Route path="/blog/:id" element={<BlogDetailPage />} />
               <Route path="/careers" element={<CareersPage />} />
               <Route path="/promotions" element={<PromotionsPage />} />
               <Route path="/contact" element={<ContactPage />} />
